@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+     <form action="__URL__/update_do"  method="post" enctype="multipart/form-data">
+	      <input type="hidden" name="id" value="{$arr.id}">
+			<table>
+				<tr>
+					<td>标题</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td>作者</td>
+					<td><input type="text" name="zuozhe"></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td><input type="text" name="neirong"></td>
+				</tr>
+				<tr>
+					<td>时间</td>
+					<td><input type="text" name="time"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="修改"></td>
+
+				</tr>
+			</table>
+		
+	</form>
+</body>
+</html>

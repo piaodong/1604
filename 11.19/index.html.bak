@@ -1,0 +1,25 @@
+<center>
+	<th>显示页面</th>
+	<table border="1">
+		<tr>
+			<td>id</td>
+			<td>name</td>
+			<td>zuozhe</td>
+			<td>neirong</td>
+			<td>time</td>
+			<td>操作</td>
+		</tr>
+		<volist name="list" id="v">
+		<tr>
+		    <td>{$v.id}</td>
+			<td>{$v.name}</td>
+			<td>{$v.zuozhe}</td>
+			<td>{$v.neirong}</td>
+			<td>{$v.time}</td>
+			<td><a href="__URL__/del/id/{$v.id}">删除</a>
+			<a href="__URL__/update?id=<{$v.id}>">修改</a></td>
+		</tr>
+		</volist>
+	</table>
+	{$page}
+</center>
